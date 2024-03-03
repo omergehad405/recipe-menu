@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Young Serif", serif;
+}
+
+:root {
+  --Nutmeg-color: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+
+  --White-color: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell-color: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  background-color: var(--Eggshell-color);
+}
+
+.menu {
+  background-color: white;
+  padding: 35px;
+  width: 650px;
+  margin: 25px auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  h3 {
+    color: var(--Nutmeg-color);
+    padding-bottom: 15px;
+    border-radius: 15px;
+  }
+
+  .info {
+    p {
+      font-size: 13px;
+      color: #777;
+      font-weight: normal;
+      padding-top: 10px;
+    }
+  }
+
+  .time {
+    background-color: var(--Rose-White);
+    padding: 25px;
+    ul {
+      li {
+        font-size: 12px;
+        padding-left: 15px;
+        margin-left: 25px;
+        color: #777;
+        span {
+          color: black;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+
+  .ingredients {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+    ul {
+      li {
+        font-size: 12px;
+        padding-left: 15px;
+        margin-left: 25px;
+        color: #777;
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .instruction {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+    ol {
+      li {
+        margin-left: 25px;
+        color: #777;
+        font-size: 13px;
+        padding-bottom: 15px;
+        padding-left: 5px;
+
+        span {
+          color: black;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+
+  .nutrition {
+    > p {
+      color: #777;
+      font-size: 13px;
+      padding-bottom: 15px;
+    }
+
+    .table {
+      position: relative;
+      p {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+        color: #777;
+        padding-left: 2rem;
+        font-size: 13px;
+
+        span {
+          color: var(--Nutmeg-color);
+          font-size: 13px;
+          position: absolute;
+          right: 0;
+          width: 350px;
+        }
+      }
+    }
+  }
+
+  .attribution {
+    text-align: center;
+    a {
+      color: var(--Nutmeg-color);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    width: 100%;
+    margin: 0;
+  }
+}
